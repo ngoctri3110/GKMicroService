@@ -1,0 +1,9 @@
+server:
+  port: 9002
+resilience4j:
+  ratelimiter:
+    instances:
+      ratelimiter_getuser:
+        limitForPeriod: 1
+        limitRefreshPeriod: 4s
+        timeoutDuration: 2s
